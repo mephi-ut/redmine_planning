@@ -84,7 +84,7 @@
     end
 
     # Get full list of trackers
-    tracker_list= Tracker.find(:all)
+    tracker_list= Tracker.all
     trackers = {}
     tracker_list.each do |tracker|
       trackers[tracker[:id]] = tracker[:name]
